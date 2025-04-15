@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Pattinson</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    html {
+      scroll-padding-top: 90px; /* Adjust based on navbar height */
+    }
+  </style>
+<body>
+
+  <!-- Top Blue Navbar -->
+  <nav class="navbar navbar-expand-lg bg-primary justify-content-center" id="home">
+    <h6 class="text-white m-3">My Pattinson Portal</h6>
+  </nav>
+
+  <!-- Sub-navigation links -->
+  <div class="bg-light py-2 sticky-top" style="z-index: 1020;">
+    <div class="container text-center">
+      <ul class="nav nav-pills justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#registration">Registration</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link" href="#verification">Customer Verification</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#EchoSign">EchoSign</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container">
+    <div class="card">
+      <div class="card-body">
+
+        <!-- Registration Section -->
+        <h5>Registration</h5>
+        <p id="registration"><strong>Step 1:</strong></p>
+        <p>From the main <a href="https://www.pattinson.co.uk" target="_blank">Pattinson.co.uk</a> website, hover the mouse over the "My Pattinson" link and choose <strong>Register</strong>. This will bring the customer to the main registration page.</p>
+        <img src="Register.png" class="img-fluid" alt="Registration Step">
+
+        <br><br>
+        <p><strong>Step 2:</strong></p>
+        <p>Once all the fields are completed, click <strong>Register</strong>.</p>
+        <p>This will now display the main customer dashboard:</p>
+        <img src="dashboard.png" class="img-fluid" alt="Customer Dashboard">
+        <br><br>
+        <p><strong>Step 3:</strong></p>
+        <p>You can now scroll down to show all areas of the customer's journey, including any offers or viewings related to buying a property.</p>
+        <p>Details of properties the customer has registered to sell, rent, or let as a landlord are also displayed here. Offers can be viewed per property category.</p>
+        <p>On the left-hand side, the customer can access details of viewings, offers, and other interactions. Verification steps are part of this journey and ensure data and activity accuracy.</p>
+        <img src="customerportal.png" class="img-fluid" alt="Customer Journey Portal">
+        <br><br>
+<hr>
+        <br>
+        <!--Verification Section-->
+        <h5 id="verification">Verification</h5>
+        <p>By clicking on the <strong>My Details</strong> section on the left hand side, customers can now complete all areas and confirm marketing preferences.</strong></p>
+        <p><strong>Please note that once the Date of Birth and Drivers License details are entered, this will initiate an email to the Team and Auction Admin for them to complete the AML check.</strong></p>
+        <p>Customers cannot bid until this process has been <span style="color: rgb(39, 202, 21); font-weight: bold;"  > Passed</span>.</p>
+        <img src="mydetails.png" class="img-fluid"  alt="mydetails">
+      <br><br>
+        <hr>
+      <br><br>
+        <h5 id="EchoSign">EchoSign</h5>
+        <p>When customers are sent an agreement for signature, below is what they receive in their inbox:</p>
+        <p><strong>They need to click the blue "Review and Sign" button</strong></p>
+        <img src="EchoSign.png" class="img-fluid" alt="Echosign email">
+       <br>
+       <p><strong>Step 1</strong></p>
+       <p>The customer must click <strong>Continue</strong> before they are able to complete the agreement</p>
+       <img src="Echosign1.png" class="img-fluid" alt="Step1">
+       <br><br>
+       <p><strong>Step 2</strong></p>
+       <p>The customer can now complete all fields in Blue, however there will be <strong>required</strong> fields which <strong>must</strong> be completed. These are shown at the bottom</p>
+       <img src="Echosign2.png" class="img-fluid" alt="step2">
+       <br><br>
+       <p><strong>Step 3</strong></p>
+       <p>Signing the agreement can be done in a number of ways:</p>
+       <img src="Echosign3.png" class="img-fluid" alt="Signatureimg">
+      <ul>
+        <li><strong>Type</strong> a signature (this will make it look like a written signature)</li>
+        <li><strong>Draw</strong> this will let the customer use their finger to draw a signature if using an Ipad etc</li>
+        <li><strong>Image</strong> this allows the customer to upload an image of a signature (this is never used)</li>
+        <li><strong>Mobile</strong> this sends a link to the customers mobile phone to enable them to draw a signature</li>
+      </ul>
+<br>
+<p>Once all <strong>required fields</strong> have been completed, the document will return the document to the sender and display this screen to the customer:</p>
+<img src="Echosign4.png" class="img-fluid"  alt="yourallset">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', function () {
+        document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+ 
+  <!-- Bootstrap JS (optional for navbar toggling) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
